@@ -1,17 +1,11 @@
-# Sample
-# Python program to swap two variables
 
-x = 5
-y = 10
+# Taking kilometers input from the user
+kilometers = float(input("Enter value in kilometers: "))
 
-# To take inputs from the user
-#x = input('Enter value of x: ')
-#y = input('Enter value of y: ')
+# conversion factor
+conv_fac = 0.621371
 
-# create a temporary variable and swap the values
-temp = x
-x = y
-y = temp
+# calculate miles
+miles = kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
 
-print('The value of x after swapping: {}'.format(x))
-print('The value of y after swapping: {}'.format(y))
